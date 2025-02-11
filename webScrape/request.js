@@ -4,7 +4,8 @@ const fs = require('fs');
 
 // Function to scrape data and return submission times
 async function scrapeLeetCode(username) {
-    const browser = await puppeteer.launch({ headless: false });
+    // Launch Puppeteer in headless mode
+    const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
 
     // Set User-Agent to mimic a real browser

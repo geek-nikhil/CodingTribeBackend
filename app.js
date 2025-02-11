@@ -74,7 +74,7 @@ app.post('/scrape', async (req, res) => {
       const submissionTimes = await scrapeLeetCode(username);
         // if(submissionTimes[0])
        const bool  = submissionTimes
-
+  
       res.status(200).json(bool);
   } catch (error) {
       console.error('Error:', error);
