@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // Replace 'yourDatabaseName' with the name of your local database
-mongoose.connect('mongodb://127.0.0.1:27017/backend', {
+mongoose.connect('mongodb+srv://Nikhil:Anam846@cluster0.tgufu.mongodb.net/condingtribe', {
 })
 .then(() => {
   console.log('Connected to MongoDB locally!');
